@@ -33,6 +33,7 @@ const Career= () => {
       console.log('Name:', name);
       console.log('Email:', email);
       console.log('Mobile:', mobile);
+      console.log('i have completed my site')
       console.log('Selected Positions:', selectedPositions);
     } else {
       setErrorMessage('Please select at least one position.');
@@ -71,7 +72,7 @@ const Career= () => {
             id="mobile"
             value={mobile}
             onChange={(e) => setMobile(e.target.value)}
-            required
+            required 
           />
         </div>
         <div className="form-group">
