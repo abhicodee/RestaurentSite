@@ -1,0 +1,66 @@
+/* ApplicationForm.css */
+body{
+  background-color: azure;
+}
+.application-form {
+   position: relative;
+   top:40px;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input,
+  select {
+  
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .error-message {
+    color: red;
+    margin-top: 10px;
+  }
+  
+  .inp-style{
+    position: relative;
+    top:8px;
+    left:-4px;
+  }
+  @media (max-width: 768px) {
+    /* Responsive styles for smaller screens */
+    .application-form {
+      max-width: 100%;
+      padding: 10px;
+    }
+   .inp-style{
+     width:100%;
+   }
+    .bel{
+      width: 40%;;
+    }
+    }
+  
+  
+  

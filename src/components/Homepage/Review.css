@@ -1,0 +1,27 @@
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color:gainsboro;
+}
+.hed{
+  font-size: 14px;
+  color:red;
+  font-size: ;
+}
+.content,h4{
+  font-size: 20px;
+}
+.st{
+  color:crimson
+}
+/* Add responsive styles */
+@media (max-width: 768px) {
+  .card {
+    margin: 8px;
+    padding: 12px;
+  }
+}

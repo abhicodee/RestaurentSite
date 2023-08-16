@@ -1,0 +1,134 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+  background-color: azure;
+}
+.head-f{
+  text-align: center;
+  color:orange;
+  text-decoration:underline;
+  font-family: 'Roboto', sans-serif;
+}
+
+ h1{
+ position: relative;
+ top:10px;
+}
+.cart-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    justify-content: space-between;
+    max-width: 1200px;
+    background-color: azure;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+.cart{
+    /* margin-top: 50px; */
+    /* width: calc(33.33% - 20px); Three carts per row with some spacing */
+    margin-bottom: 20px;
+    padding: 10px;
+     color:crimson;
+    
+    border: 1px solid #ccc;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+/* .cart img {
+    max-width: 100%;
+    object-fit: cover;
+    height: 62%;
+  } */
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+ .btn-sy{
+  margin-left:74vh ;
+ }
+ .pric{
+  position: relative;
+
+  left:200px;
+ }
+ .rate{
+  width:12%;
+  background-color:#007bff;
+  position: relative;
+  top:-66px;
+  color:white;
+  border-radius: 10px;
+  margin-left: 320px;
+ }
+ .containerrr{
+  width:100%;
+  height:250px;
+  overflow: hidden;
+ }
+ .imgep{
+  object-fit: contain;
+ }
+ @media (max-width: 768px) {
+
+  .card-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+   
+  }
+  .containerrr{
+    width:100%;
+    height:40px;
+    overflow: hidden;
+   }
+   .imgep{
+    object-fit: cover;
+   }
+ .head-c,h4{
+    margin-top: 2px;
+    font-size: 8px;
+ }
+ .head-f,h1{
+  font-size: 16px;
+ }
+ .head-c,p{
+   position: relative;
+   top:-1px;
+ }
+.rate{
+  position: relative;
+  left:-244px;
+  top:-20px;
+}
+.pric{
+  font-size: 6px;
+ position: relative;
+ top:12px;
+  left:70px;
+}
+ .orbtn{
+  margin-top: -200px;
+  font-size: 4px;
+  height:8px;
+ }
+.btn-sy{
+  display: flex;
+position: relative;
+top:60px;
+left:-426px;
+ 
+}  
+}
+  
