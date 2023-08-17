@@ -19,6 +19,11 @@
 
 .close-button {
   margin-top: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
 }
 @media (max-width: 768px) {
   #popup {

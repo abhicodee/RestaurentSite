@@ -43,7 +43,13 @@ body{
     object-fit: cover;
     height: 62%;
   } */
-  button {
+  .bcn{
+    color:red;
+    outline:none;
+    border:none;
+    cursor: pointer;
+  }
+  .orbtn {
     background-color: #007bff;
     color: white;
     border: none;
@@ -51,7 +57,7 @@ body{
     cursor: pointer;
   }
   
-  button:hover {
+  .orbtn:hover {
     background-color: #0056b3;
   }
  .btn-sy{

@@ -828,11 +828,11 @@ const Product = () => {
                   <p>
                     {readMore === currEle.id ? currEle.description :showlessdescription(currEle.description)}{" "}
                     {currEle.description?.length > 8 && (
-                      <span onClick={() => readMore === currEle.id ?setReadMore(""):
+                      <button className="bcn" onClick={() => readMore === currEle.id ?setReadMore(""):
                         setReadMore( currEle.id)
                       }>
-                      {readMore === currEle.id? "Read less": "Read more"}
-                      </span>
+                      {readMore === currEle.id? "View less": "View more"}
+                      </button>
                     )}{" "}
                   </p>
                   </div>
