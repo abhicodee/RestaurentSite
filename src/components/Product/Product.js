@@ -846,7 +846,7 @@ const Product = () => {
         })}
 
         <div className="btn-sy">
-          <button 
+          <button  className="byb"
             onClick={() => {
               setStart(start - 10);
               setEnd(end - 10);
@@ -854,7 +854,7 @@ const Product = () => {
           >
             Prev
           </button>
-          <button
+          <button  className="byb"
             onClick={() => {
               setStart(start + 10);
               setEnd(end + 10);
