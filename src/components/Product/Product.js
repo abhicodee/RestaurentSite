@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useEffect,useState } from "react";
 import Dialogue from "./Dialogue";
 import "./Product.css";
 
@@ -825,11 +825,12 @@ const Product = () => {
                   <p>{currEle.categoary}</p>
                   <p className="rate">{currEle.rating}✰</p>
 
+
                   <p>
                     {readMore === currEle.id ? currEle.description :showlessdescription(currEle.description)}{" "}
-                    {currEle.description?.length > 8 && (
+                    {currEle.description?.length > 60 && (
                       <button className="bcn" onClick={() => readMore === currEle.id ?setReadMore(""):
-                        setReadMore( currEle.id)
+                        setReadMore(currEle.id)
                       }>
                       {readMore === currEle.id? "View less": "View more"}
                       </button>
@@ -837,8 +838,8 @@ const Product = () => {
                   </p>
                   </div>
                  <span className="pric" ><span >₹ {currEle.prize}</span></span> 
-                  <button  className="orbtn" onClick={openDialog}>Order Now</button>
-            <Dialogue isOpen={isDialogOpen} onClose={closeDialog} />
+                  <button className="orbtn" onClick={openDialog}>Order Now</button>
+                  <Dialogue isOpen={isDialogOpen} onClose={closeDialog} />
                 </div>
               )}
             </>

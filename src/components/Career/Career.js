@@ -90,6 +90,7 @@ const Career= () => {
                 {position}
               </option>
             ))}
+            
           </select>
         </div>
         {errorMessage && <p className="error-message">{errorMessage}</p>}

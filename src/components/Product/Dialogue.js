@@ -20,4 +20,4 @@ const Dialogue = ( { isOpen, onClose }) => {
   )
 }
 
-export default Dialogue
+export default Dialogue;
