@@ -1,3 +1,4 @@
+
 import React from 'react'
 import "./Dialogue.css";
 const Dialogue = ( { isOpen, onClose }) => {

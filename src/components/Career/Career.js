@@ -80,14 +80,14 @@ const Career= () => {
             required 
           />
         </div>
-        <div className="form-group">
+        {/* <div className="form-group">
           <label htmlFor="positions">Preferred Positions (up to 3)</label>
           <select
             id="positions"
             multiple
             value={selectedPositions}
             onChange={handlePositionChange}
-            required
+            required className='form-control'
           >
             {positions.map((position) => (
                <option key={position} value={position}>
@@ -96,7 +96,15 @@ const Career= () => {
             ))}
 
           </select>
-        </div>
+        </div> */}
+         <label for="preferred_roles">Preferred Roles (select up to three):</label><br></br>
+         <select name="role" >
+         <option value="PrefferdRole">Preferred_roles</option>
+         <option value="waiter">Waiter/Waitress</option>
+         <option value="chef">Chef</option>
+            <option value="bartender">Bartender</option>
+            <option value="host">Host/Hostess</option>
+  </select>
         {errorMessage && <p className="error-message">{errorMessage}</p>}
         <button  className=
         "bel" type="submit">Submit Application</button>

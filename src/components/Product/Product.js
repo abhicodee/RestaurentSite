@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Dialogue from "./Dialogue";
 import Footer from "../Footer/Footer";
+import Pagination from "@mui/material/Pagination";
+import Stack from "@mui/material/Stack";
 
 import "./Product.css";
 import { useMemo } from "react";
@@ -8,8 +10,13 @@ import { useMemo } from "react";
 const Product = () => {
   const itemsPerPage = 6;
   const [readMore, setReadMore] = useState(false);
-  const [currentPage, setCurrentPage] = useState(1);
   const [isDialogOpen, setDialogOpen] = useState(false);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [cardsPerPage] = useState(6);
+  // const paginate = (cardsPerPage) => setCurrentPage(cardsPerPage);
+  // const handleChange = (event, value) => {
+  //   setCurrentPage(value);
+  // };
   const totalPage = useMemo(() => {
     return Math.ceil(Menudata?.length / itemsPerPage);
   }, [Menudata, itemsPerPage]);
@@ -21,17 +28,7 @@ const Product = () => {
     );
   }, [Menudata, currentPage, itemsPerPage]);
 
-  const handleChangePrev = () => {
-    if (currentPage > 1) {
-      setCurrentPage(currentPage - 1);
-    }
-  };
 
-  const handleChangeNext = () => {
-    if (currentPage < totalPage) {
-      setCurrentPage(currentPage + 1);
-    }
-  };
 
   const openDialog = () => {
     setDialogOpen(true);
@@ -69,7 +66,6 @@ const Product = () => {
                   <div className="name_rating">
                     <h4 className="main-p">{currEle.name}</h4>
                     <div>{currEle.categoary}</div>
-                 
                   </div>
                   <p>
                     {readMore === currEle.id
@@ -116,7 +112,7 @@ const Product = () => {
         onPageChange={onPageChange}
       /> */}
 
-        <div className="btn-sy">
+        {/* <div className="btn-sy">
           <button className="byb" onClick={handleChangePrev}>
             Prev
           </button>
@@ -126,9 +122,20 @@ const Product = () => {
           <button className="byb" onClick={handleChangeNext}>
             Next
           </button>
+        </div> */}
+<div className="pagination">
+        <Stack spacing={2}>
+          <Pagination
+            count={8}
+            page={currentPage}
+            onChange={(_, page) => {
+              setCurrentPage(page);
+              // console.log(page, "dvsjkvskl");
+            }}
+            // onClick={handleChangePrev}
+          />
+        </Stack>
         </div>
-
-      
       </div>
       <Footer />
     </>
@@ -684,5 +691,4 @@ const Menudata = [
     prize: 99,
     description: "Lorem ipsum dolor sit.",
   },
-
 ];

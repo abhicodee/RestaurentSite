@@ -18,7 +18,6 @@ body{
  top:10px;
 }
 .rate{
-
 position: relative;
 top:-60px;
 }
@@ -82,14 +81,20 @@ top:-60px;
     color: white;
     background-color: #007bff;
   }
+  .pagin{
+    position: relative;
+    left:420px;
+  }
   .orbtn {
     display: flex;
     justify-content: space-between;
     color: white;
     border: none;
     }
-  
-
+.pagination{
+  position: relative;
+  left:400px;
+}
  .btn-sy{
   padding: 20px;
   margin-left:74vh ;
@@ -145,11 +150,15 @@ top:-60px;
    .bcn{
     font-size: 6px;
    }
+   .pagination{
+  position: relative;
+  left:26px;
+   }
 .imgep{
   height:20vh;
 }
 .rate{
-  width:26px;
+  width:40px;
   position: relative;
   top:-46px
 }
@@ -166,8 +175,6 @@ top:-60px;
  .head-f,h1{
   font-size: 16px;
  }
-
- 
 .main-p{
   margin-top:96px;
 }
@@ -175,9 +182,7 @@ top:-60px;
   font-size: 20px;
  position: relative;
  top:2px;
-
 }
-
  .orderBtn{
   margin-top: -200px;
   font-size: 10px;
