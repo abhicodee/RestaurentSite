@@ -14,14 +14,16 @@
 
 .dialog-content {
   background-color: white;
-  width:30%;
- 
+  width:40%;
+  height:40%;
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
-
+.dicontent{
+  margin-top: 58px;
+}
 .close-button {
-  margin-top: 10px;
+  margin-top: 30px;
   background-color: #007bff;
   color: white;
   border: none;
@@ -31,9 +33,19 @@
 @media (max-width: 768px) {
   #popup {
     width:90%;
+  }  
+  .dicontent{
+    margin-top: 20px;
+    padding: 6px 4px;
   }
   .dialog-content {
-    width:100%;
+    padding:5px;
+    width:80%;
+    height:45%;
+  }
+  .close-button {
+    margin-top: 24px;
+    padding:5px 10px;
   }
 
 }
