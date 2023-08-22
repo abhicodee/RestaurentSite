@@ -4,7 +4,7 @@ body{
 }
 .application-form {
    position: relative;
-   top:40px;
+   top:48px;
     max-width: 400px;
     margin: 0 auto;
     padding: 20px;
@@ -44,6 +44,7 @@ body{
   }
   
   .inp-style{
+    width:100%;
     position: relative;
     top:8px;
     left:-4px;

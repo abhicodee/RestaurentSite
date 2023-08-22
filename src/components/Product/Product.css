@@ -17,6 +17,18 @@ body{
  position: relative;
  top:10px;
 }
+.rate{
+
+position: relative;
+top:-60px;
+}
+.padw{
+ padding:40px 20px;
+ background-color: azure;
+}
+.dephe{
+  background-color:darkgray;
+}
 .cart-container{
     display: flex;
     flex-wrap: wrap;
@@ -27,17 +39,32 @@ body{
     margin: 0 auto;
     margin-top: 40px;
 }
+.pimg{
+  width:100%;
+  height:34vh;
+}
+.rate{
+  display: flex;
+  flex-direction: column;
+}
 .cart{
-    /* margin-top: 50px; */
-    /* width: calc(33.33% - 20px); Three carts per row with some spacing */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+     margin-top: 50px; 
+     width: calc(33.33% - 20px);
+     object-fit: cover; 
     margin-bottom: 20px;
     padding: 10px;
-     color:crimson;
-    
+  height: 60vh;
     border: 1px solid #ccc;
     text-align: center;
     font-family: 'Roboto', sans-serif;
 }
+/* .name_rating{
+  display: flex;
+  justify-content: space-between;
+} */
 /* .cart img {
     max-width: 100%;
     object-fit: cover;
@@ -49,49 +76,52 @@ body{
     border:none;
     cursor: pointer;
   }
-  .orbtn {
+  .orderBtn{
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
     background-color: #007bff;
+  }
+  .orbtn {
+    display: flex;
+    justify-content: space-between;
     color: white;
     border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-  }
+    }
   
-  .orbtn:hover {
-    background-color: #0056b3;
-  }
+
  .btn-sy{
-
   padding: 20px;
-
   margin-left:74vh ;
  }
  .pric{
   position: relative;
-
-  left:200px;
+  color: black;
+  /* border: 1px; */
+  /* left:200px; */
  }
- .rate{
-  width:12%;
-  background-color:#007bff;
+.ratingDiv{
   position: relative;
-  top:-66px;
+  top:40px;
+}
+
+ .rate{
+
+  width:50px;
+  background-color:#007bff;
   color:white;
-  border-radius: 10px;
-  margin-left: 320px;
+  border-radius: 7px;
  }
  .containerrr{
   width:100%;
   height:250px;
-  overflow: hidden;
+  /* overflow: hidden; */
  }
  .byb{
   padding:8px 8px;
   background-color: #007bff;
  }
- .imgep{
-  object-fit: contain;
- }
+
  @media (max-width: 768px) {
 
   .card-container {
@@ -99,52 +129,65 @@ body{
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
-   
+  }
+  
+  .cart{
+    width: 100%; 
+    height:36vh;
+    margin-left:24px;
+   margin-right: 28px;
   }
   .containerrr{
     width:100%;
-    height:40px;
-    overflow: hidden;
+    height:30px;
+    /* overflow: hidden; */
    }
    .bcn{
     font-size: 6px;
    }
-   .imgep{
-    object-fit: cover;
-   }
- .head-c,h4{
-    margin-top: 2px;
-    font-size: 8px;
+.imgep{
+  height:20vh;
+}
+.rate{
+  width:26px;
+  position: relative;
+  top:-46px
+}
+
+.pimg{
+  width:100%;
+  height:18vh;
+}
+ .head-c{
+  color:black;
+    margin-top: px;
+    font-size: 10px;
  }
  .head-f,h1{
   font-size: 16px;
  }
- .head-c,p{
-   position: relative;
-   top:-1px;
- }
-.rate{
-  position: relative;
-  left:-244px;
-  top:-20px;
+
+ 
+.main-p{
+  margin-top:96px;
 }
 .pric{
-  font-size: 6px;
+  font-size: 20px;
  position: relative;
- top:12px;
-  left:60px;
+ top:2px;
+
 }
- .orbtn{
+
+ .orderBtn{
   margin-top: -200px;
-  font-size: 4px;
-  height:8px;
+  font-size: 10px;
+  height:26px;
  }
 .btn-sy{
-  
   display: flex;
 position: relative;
-top:60px;
-left:-426px;
+top:2px;
+left:-458px;
 }  
 }
   

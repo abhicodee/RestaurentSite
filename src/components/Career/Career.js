@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Footer2 from '../Footer/Footer2'; 
 import "./Career.css";
 
 const Career= () => {
@@ -14,7 +15,6 @@ const Career= () => {
     'Bartender',
     'Host/Hostess',
     'Dishwasher',
-    // Add more positions here
   ];
 
   const handlePositionChange = (event) => {
@@ -42,8 +42,12 @@ const Career= () => {
   };
 
   return (
-    <div className='image'>
-    <div className="application-form">
+    <>
+   
+    <div className='env'>
+
+
+     <div className="application-form" style={{top:"80px" ,position:'relative'}}> 
       <h2>Job Application</h2>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
@@ -86,11 +90,11 @@ const Career= () => {
             required
           >
             {positions.map((position) => (
-              <option key={position} value={position}>
+               <option key={position} value={position}>
                 {position}
               </option>
             ))}
-            
+
           </select>
         </div>
         {errorMessage && <p className="error-message">{errorMessage}</p>}
@@ -99,6 +103,8 @@ const Career= () => {
       </form>
     </div>
     </div>
+   <Footer2/>
+    </>
   );
 };
 

@@ -48,7 +48,7 @@ const Review = () => {
       <div
         style={{
           width: "60%",
-          height: "80vh",
+          
           // border: "2px solid red",
         }}
       ></div>

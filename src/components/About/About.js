@@ -1,10 +1,15 @@
 import React from 'react'
 import "./About.css";
+import Footer from '../Footer/Footer'; 
+import absimg from "../Homepage/image/absimg.avif"
 import Serviceprovider from './Serviceprovide';
 const About=()=>{
   return(
 <>
 <div className="about-us">
+  <div className='aboimg'>
+{/* <img src={absimg}></img> */}
+</div>
 <h2>About Us</h2>
 <p>
   Welcome to Our Restaurant! We are dedicated to serving delicious and
@@ -27,20 +32,20 @@ const About=()=>{
   Thank you for choosing Our Restaurant. We look forward to serving you
   and making your dining experience truly exceptional
 </p>
-<div className='cart-container'>
+<div className='cap-container'>
  {
   Serviceprovider.map((item)=>{
     return (
       <> 
-    <div className='cart'>
+    <div className='cap'>
     {/* <img src={item.image}></img> */}
-    <h4>{item.name}</h4>
-    <p >{item.description}</p>
+    <h4 className='abcon'>{item.name}</h4>
     </div>
       </>
     )
   }) 
  }
+ <Footer/>
 </div>
 </div>
 </>
